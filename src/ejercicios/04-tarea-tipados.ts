@@ -5,15 +5,15 @@
 
 
 interface SuperHeroe {
-    nombre: string,
-    edad: number,
-    direccion:DireccionHeroe,
+    nombre: string;
+    edad: number;
+    direccion:DireccionHeroe;
     mostrarDireccion: () => string
 }
 
 interface DireccionHeroe {
-    calle: string,
-    pais: string,
+    calle: string;
+    pais: string;
     ciudad: string
 }
 
