@@ -2,7 +2,7 @@
     ===== Código de TypeScript =====
 */
 
-interface Producto {
+export interface Producto {
     desc: string;
     precio: number;
 }
@@ -27,7 +27,7 @@ function calcularISV(productos: Producto[]):number{
     return total * 0.15;
 }
 
-function calcularISVconDestructuracion(productos: Producto[]):[number, number]{
+export function calcularISVconDestructuracion(productos: Producto[]):[number, number]{
 
     let total = 0;
 
@@ -44,6 +44,6 @@ const isv = calcularISV(articulos);
 // aplicamos destructuring al retorno de la función
 const [total, isv2] = calcularISVconDestructuracion(articulos);
 
-console.log('El Impuesto Sobre Venta es de: ', isv);
-console.log('El Total de la Venta es de: ', total);
-console.log('El Impuesto Sobre Venta es de: ', isv2);
+// console.log('El Impuesto Sobre Venta es de: ', isv);
+// console.log('El Total de la Venta es de: ', total);
+// console.log('El Impuesto Sobre Venta es de: ', isv2);
