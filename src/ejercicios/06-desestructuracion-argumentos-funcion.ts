@@ -18,6 +18,7 @@ const telefono2: Producto = {
 }
 
 // funcion sin destructurar argumentos
+//ISV = Impuesto Sobre Ventas
 function calcularISV(productos: Producto[]):number{
 
     let total = 0;

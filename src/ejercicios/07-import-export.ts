@@ -17,6 +17,7 @@ const carritoCompras: Producto[] = [
 ];
 
 // cuando llamamos a una funcion que esta siendo importada esta hace que se ejecute todo el archivo donde se encuentra
+//al importarla el vuelve y la crea en ejecucion, por lo tanto ejecuta todo el archivo desde donde se esta exportando
 const [total, isv] = calcularISVconDestructuracion(carritoCompras);
 
 console.log('Total', total);

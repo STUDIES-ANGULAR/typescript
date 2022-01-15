@@ -15,6 +15,7 @@
 
 //esta forma no es muy usada ya que requiere muchas lineas de código
 class HeroeForma1{
+    //al no definir el tipo de acceso, por defecto es Public
      alterEgo: string;
      edad: number;
     //los atributos STATIC se pueden acceder sin crear una instancia de esa clase, ejemplo Heroe.nombreReal
@@ -26,6 +27,7 @@ class HeroeForma1{
     }
 }
 
+//Forma corta de crear una clase, creo la clase y en el constructor defino sus argumentos y su alcance(public, private, etc)
 class PersonaNormal {
     constructor(
         public nombre: string,
@@ -35,13 +37,13 @@ class PersonaNormal {
 
 class Heroe extends PersonaNormal {
   
-
+   //propiedades opcionales ejemplo: public edad?: number
     constructor(
         public alterEgo: string,
         public edad: number,
         public nombreReal: string
     ){
-        super(nombreReal, 'new york, USA');
+        super(nombreReal, 'New York -  USA');
     }
 
 }
